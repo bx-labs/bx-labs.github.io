@@ -1,0 +1,12 @@
+{
+    "preview": true,
+    "notice": "Example-only findings. Not a security conclusion.",
+    "rules_matched": [
+      {
+        "rule_id": "SB-0001",
+        "title": "Example rule match",
+        "severity": "info",
+        "explain": "This is a placeholder to demonstrate explainable rule output."
+      }
+    ]
+  }

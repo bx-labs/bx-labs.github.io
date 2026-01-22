@@ -1,0 +1,47 @@
+{
+    "schema": "bxlabs.audit-pack.manifest.v1",
+    "kind": "audit-pack",
+    "preview": true,
+    "engine": {
+      "name": "bxlabs-audit-engine",
+      "version": "0.2.0-preview",
+      "binary_sha256": "REPLACE_WITH_REAL_SHA256_IF_YOU_WANT"
+    },
+    "run": {
+      "id": "demo-0001",
+      "timestamp_utc": "2026-01-22T00:00:00Z",
+      "mode": "offline-demo",
+      "deterministic": true
+    },
+    "inputs": {
+      "source": {
+        "type": "fixture",
+        "ref": "no-customer-code",
+        "sha256": "N/A"
+      },
+      "rpc": {
+        "declared_by_customer": true,
+        "provider": "N/A (demo)",
+        "endpoint": "N/A (demo)"
+      },
+      "policy_packs": [
+        {
+          "name": "security-basic",
+          "version": "0.2.0-preview",
+          "sha256": "N/A (demo)"
+        }
+      ]
+    },
+    "outputs": {
+      "reports": [
+        "reports/summary.md",
+        "reports/findings.json"
+      ],
+      "hashes": "SHA256SUMS"
+    },
+    "non_goals": [
+      "blockchain_correctness",
+      "contract_security_conclusion",
+      "business_logic_correctness"
+    ]
+  }
